@@ -1,12 +1,7 @@
-
+import MainRoute from "./routes/MainRoute";
 
 function App() {
-  
-  return (
-    <>
-     
-    </>
-  )
+  return <MainRoute />;
 }
 
-export default App
+export default App;
