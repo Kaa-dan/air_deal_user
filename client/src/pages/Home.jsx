@@ -1,6 +1,9 @@
 import Header from "../componenets/home/Header";
 import Banner from "../componenets/home/Banner";
 import FilterSection from "../componenets/home/FilterSection";
+import OfferSection from "../componenets/home/OfferSection";
+import Detail from "../componenets/home/Detail";
+import DealsAndOffers from "../componenets/home/DealsAndOffers";
 const Home = () => {
   return (
     <div className="w-full font-montserrat relative">
@@ -9,6 +12,10 @@ const Home = () => {
       <Banner />
 
       <FilterSection />
+
+      <OfferSection />
+      <Detail />
+      <DealsAndOffers />
     </div>
   );
 };
