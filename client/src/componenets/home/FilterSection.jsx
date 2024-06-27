@@ -8,8 +8,8 @@ import Select from "react-select";
 import DatePicker from "react-datepicker";
 import CustomInput from "../util/DatePickerCustom";
 import { MdAirlineSeatReclineExtra } from "react-icons/md";
-
-import CustomMenuRenderer from "../util/SelectCustom";
+import { GoArrowSwitch } from "react-icons/go";
+import CustomSelect from "../util/CustomSelect";
 // Custom styles for react-select
 const customStyles = {
   control: (provided) => ({
@@ -44,37 +44,26 @@ const FilterSection = () => {
         <h3 className="font-semibold">Where are you flying?</h3>
       </div>
 
-      <div className="flex bg-[#ffffff] justify-between w-full gap-4">
-        <div className="flex items-center text-gray-500 border border-gray-300  rounded-md w-[25%] p-3">
-          <RiFlightTakeoffFill />
-          <Select
-            isClearable={true}
-            options={dummyData}
-            placeholder="Where From ?"
-            styles={customStyles}
-          />
+      <div className="flex bg-[#ffffff] gap-4  w-full ">
+        <div className="flex gap-4 relative ">
+          <div className="flex items-center border rounded p-2 w-[50%] ">
+            <CustomSelect
+              options={dummyData}
+              placeholder="Where From ?"
+              icon={<RiFlightTakeoffFill />}
+            />
+          </div>
+          <div className="flex items-center justify-center text-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black w-8 h-8 rounded-full">
+            <GoArrowSwitch />
+          </div>
+          <div className="flex items-center border rounded p-2 w-[50%] ">
+            <CustomSelect
+              options={dummyData}
+              placeholder="Where To ?"
+              icon={<RiFlightLandLine />}
+            />
+          </div>
         </div>
-        <div className="flex items-center text-gray-500 border border-gray-300  rounded-md w-[25%] p-3">
-          <RiFlightTakeoffFill />
-          <Select
-            isClearable={true}
-            options={dummyData}
-            placeholder="Where From ?"
-            styles={customStyles}
-          
-            menuRenderer={<CustomMenuRenderer/>}
-          />
-        </div>
-        {/* <div className="flex items-center  text-gray-500 border border-gray-300 rounded-md w-[25%] p-3">
-          <RiFlightLandLine />
-          <Select
-            isClearable={true}
-            options={dummyData}
-            placeholder="Where To ?"
-            styles={customStyles}
-          // components={}
-          />
-        </div> */}
 
         <div className="flex items-center justify-center border  rounded shadow w-[25%] p-3">
           <DatePicker
