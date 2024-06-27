@@ -27,8 +27,8 @@ const customStyles = {
 };
 
 const CustomPlaceholder = ({ icon, text }) => (
-  <div className="flex items-center w-[250px]  justify-start">
-    <div className="text-3xl">{icon}</div>
+  <div className="flex items-center w-[200px]  justify-start">
+    {/* <div className="text-3xl">{icon}</div> */}
     <span>{text}</span>
   </div>
 );
@@ -36,6 +36,7 @@ const CustomPlaceholder = ({ icon, text }) => (
 const CustomSelect = ({ options, placeholder, icon }) => (
   <Select
     options={options}
+    isClearable={true}
     styles={customStyles}
     placeholder={<CustomPlaceholder icon={icon} text={placeholder} />}
     components={{

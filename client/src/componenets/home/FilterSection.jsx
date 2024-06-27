@@ -4,7 +4,6 @@ import { RiFlightLandLine } from "react-icons/ri";
 import "react-datepicker/dist/react-datepicker.css";
 import { MdOutlineDateRange } from "react-icons/md";
 import { FaTimes } from "react-icons/fa";
-import Select from "react-select";
 import DatePicker from "react-datepicker";
 import CustomInput from "../util/DatePickerCustom";
 import { MdAirlineSeatReclineExtra } from "react-icons/md";
@@ -45,8 +44,11 @@ const FilterSection = () => {
       </div>
 
       <div className="flex bg-[#ffffff] gap-4  w-full ">
-        <div className="flex gap-4 relative ">
+        <div className="flex gap-4 relative w-[50%] ">
           <div className="flex items-center border rounded p-2 w-[50%] ">
+            <div>
+              <RiFlightLandLine className="text-3xl" />
+            </div>
             <CustomSelect
               options={dummyData}
               placeholder="Where From ?"
@@ -57,10 +59,13 @@ const FilterSection = () => {
             <GoArrowSwitch />
           </div>
           <div className="flex items-center border rounded p-2 w-[50%] ">
+            <div>
+              <RiFlightLandLine className="text-3xl" />
+            </div>
             <CustomSelect
               options={dummyData}
               placeholder="Where To ?"
-              icon={<RiFlightLandLine />}
+              // icon={<RiFlightLandLine />}
             />
           </div>
         </div>
