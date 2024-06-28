@@ -1,4 +1,6 @@
 import DeatailAndOfferImage from "../../assets/home/detailsAndOffer/DetailandOffer.png";
+
+import { motion } from "framer-motion";
 const DealsAndOffers = () => {
   return (
     <div className="h-[80vh] bg-[#BCE7FF] ">
@@ -7,9 +9,17 @@ const DealsAndOffers = () => {
           <h1 className="text-3xl font-semibold ">Deals & Offers</h1>
         </div>
         <div className="flex h-[80%] justify-between  w-full ">
-          <div className="w-[45%] ">
+          <motion.div
+            initial={{
+              rotate: "0deg",
+            }}
+            animate={{
+              rotate: "360  deg ",
+            }}
+            className="w-[45%] "
+          >
             <img className="rounded-sm" src={DeatailAndOfferImage} alt="" />
-          </div>
+          </motion.div>
           <div className="w-[55%] flex flex-col gap-4 py-16 px-10">
             <div>
               <h2 className="font-bold text-xl">Go Air Dubai</h2>
