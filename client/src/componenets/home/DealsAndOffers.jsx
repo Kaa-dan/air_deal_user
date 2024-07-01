@@ -28,8 +28,8 @@ const DealsAndOffers = () => {
   //     return ()=>clearInterval(interval)
   // },[])
   return (
-    <div className="h-[80vh] bg-[#BCE7FF] ">
-      <div className="flex flex-col  w-[82%] m-auto h-full ]">Ś
+    <div className="h-[70vh] bg-[#BCE7FF]  ">
+      <div className="flex flex-col  w-[82%] m-auto h-[100%]">
         <div className="h-[20%] flex items-center \">
           <h1 className="text-3xl font-semibold ">Deals & Offers</h1>
         </div>
@@ -62,6 +62,7 @@ const DealsAndOffers = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };

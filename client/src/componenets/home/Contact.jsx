@@ -6,7 +6,8 @@ import { CiMail } from "react-icons/ci";
 import background from "../../assets/home/contact/svg/background.svg";
 const Contact = () => {
   return (
-    <div className="h-[100vh] bg-[#0A2945] ">
+    <div className="h-[8
+    0vh] bg-[#0A2945] ">
       <div className="flex px-10">
         <div
           className="w-[50%] flex items-center justify-center"
@@ -16,7 +17,7 @@ const Contact = () => {
             backgroundPositionY: "90%",
             backgroundPositionX: "25%",
           }}
-        >
+        > 
           <img src={contactMain} alt="" />
         </div>
         <div className="w-[46%] flex flex-col justify-center ">

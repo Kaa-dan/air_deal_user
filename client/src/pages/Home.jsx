@@ -8,22 +8,22 @@ import Contact from "../componenets/home/Contact";
 import Footer from "../componenets/home/Footer";
 const Home = () => {
   return (
-    <div className="w-full font-montserrat relative">
+    <div className=" mx-auto h-[100%]  font-montserrat relative ">
       <Header />
 
       <Banner />
 
-      <FilterSection />
+      {/* <FilterSection /> */}
 
       <OfferSection />
 
-      <Detail />
+      {/* <Detail /> */}
 
-      <DealsAndOffers />
+      {/* <DealsAndOffers /> */}
 
-      <Contact />
+      {/* <Contact /> */}
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
